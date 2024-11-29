@@ -20,14 +20,15 @@ let result=
   }
 
 
-submitbtn.addEventListener("click",async()=>{
+submitbtn.addEventListener("click",async(e)=>{
+    e.preventDefault()
     console.log("scriptstarts");
     let key="ema_live_7w3BCwzNcnAy7bRwnl7OJTuCqOxxenvaVVLxVSmw"
     let email=document.getElementById("emails").value
 
-let url=`https://api.emailvalidation.io/v1/info?apikey=${key}email={email}`
-let resp= await fetch(url)
-let result=await resp.json()
+let url=`https://api.emailvalidation.io/v1/info?apikey=${key}&email=${email}`
+let res = await fetch(url)
+let result=await res.json()
 
 
 let str=''
