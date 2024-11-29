@@ -55,7 +55,9 @@ a{
 a:hover{
     color:bisque
 }
-
+h4{text-align:center;
+    padding:5px;
+}
 .container{
     background-color: black;
     flex-direction: column;
@@ -71,11 +73,16 @@ form{
    padding:100px;
    
 }
+label{
+    margin:auto;
+}
 input{
     color:black;
     margin:5px;
+    width:400px;
+    margin:auto;
 }
-#btn{
+#submitbtn{
     background-color: black;
     color:white;
     font-weight: 600;
@@ -84,10 +91,13 @@ input{
     border-radius:5px;
   
 }
-#btn:hover{
+#submitbtn:hover{
     background-color: white;
     color:black;
     font-weight: 600;
+}
+#resultCont div::first-letter{
+  text-transform: uppercase;
 }
 footer{
     margin:auto;
