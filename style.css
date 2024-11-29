@@ -11,10 +11,12 @@
 }
 body{
 background-color: #333;
+max-height: 100vh;
 }
 .logo{
     padding:30px;
     font-size: 30px;
+    font-weight: 600;
     animation:leftslide infinite 3s ease-in;
 
 }
@@ -35,6 +37,7 @@ header{
    justify-content: space-between;
 }
 h3{
+    font-size: 20px;
     margin:25px;
     box-sizing: border-box;
 }
@@ -76,6 +79,10 @@ input{
     background-color: black;
     color:white;
     font-weight: 600;
+    width:200px;
+    margin:auto;
+    border-radius:5px;
+  
 }
 #btn:hover{
     background-color: white;
@@ -88,4 +95,18 @@ footer{
     align-items: center;
     justify-content: center;
     font-size: 15px;
+}
+@media only screen and(max-width:600px){
+    body{
+        background-color: skyblue;
+    }
+    .container{
+        font-size: 3rem;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .hamburger{
+
+    }
 }
