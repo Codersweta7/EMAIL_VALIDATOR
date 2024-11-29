@@ -21,4 +21,4 @@ let str=''
 for (key of Object.keys(result)){
  str=str+`<div>${key}:${result[key]}</div>`
 }
-resultVal.innerHtml=str;
+resultCont.innerHTML=str;
