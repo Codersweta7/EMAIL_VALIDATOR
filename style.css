@@ -20,17 +20,7 @@ max-height: 100vh;
     animation:leftslide infinite 3s ease-in;
 
 }
-@keyframes leftslide{
-    0%{
-        transform:scaleX(0px);
-    }
-    100%{
-        transform:scaleX(20px)
-    }
-}
-.logo{
 
-}
 header{
     
    display:flex;
@@ -47,6 +37,7 @@ nav a{
     padding:10px;
     color:white;
     margin-left:50px;
+    transition:0.3s ease-in;
 }
 a{
     font-size:20px;
@@ -106,17 +97,84 @@ footer{
     justify-content: center;
     font-size: 15px;
 }
-@media only screen and(max-width:600px){
+#hamburger{
+    display:none;
+}
+@media(max-width:790px){
     body{
-        background-color: skyblue;
+        background-color: #333;
     }
-    .container{
-        font-size: 3rem;
+    
+    
+    #hamburger{
+        display:block;
+        height:32px;
+        width:40px;
+        margin:30px;
+        color:aliceblue;
     }
-    nav{
-        flex-direction: column;
-    }
-    .hamburger{
+    .logo{
+        flex-direction: row;
+        
 
     }
+
+    .active1 a{
+        background-color: white;
+        color: black;
+        position:absolute;
+        top:100px;
+        right:20px;
+        width:250px;
+        text-align: center;
+        border-radius: 5px;
+        display:none;
+        flex-direction:column;
+        padding:10px;
+        border-radius:3px;
+        font-size: 10px;
+        z-index:1000;
+    }
+    .active1 a{
+        background-color: aliceblue;
+        text-align: center;
+    }
+    .active1 a.active{
+        display:flex;
+      
+      
+    }
+    .container{
+        height:300px;
+        width:90%;
+        margin:20px auto;
+        padding:20px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    form{
+        font-size: 15px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .container{
+        height:350px;
+    }
+    form input{
+       max-width:350px;
+    }
+    input:focus{
+        border-color:black;
+        outline:none;
+    }
+    
+    .no-wrap{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
 }
