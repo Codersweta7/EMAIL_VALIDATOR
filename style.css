@@ -82,7 +82,7 @@ form input:focus {
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
-#resultCont{
+#resultCont::first-letter{
     text-transform: uppercase;
 }
 
