@@ -38,11 +38,11 @@ for (key of Object.keys(result)){
 resultCont.innerHTML=str;
 })
 
-const ham=document.getElementById("hamburger");
-const navb=document.getElementById("navigate");
-ham.addEventListener('click',()=>{
-  navb.classList.toggle('active');
-})
+// const ham=document.getElementById("hamburger");
+// const navb=document.getElementById("navigate");
+// ham.addEventListener('click',()=>{
+//   navb.classList.toggle('active');
+// })
 
 
 
